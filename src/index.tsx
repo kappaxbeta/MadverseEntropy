@@ -11,7 +11,7 @@ const store = configureKonvaEditorStore();
 
 const rootElement = document.getElementById("root");
 if (rootElement === null) {
-  throw Error("rootElement is null");
+  throw Error("rootElement is null doof");
 }
 
 const root = ReactDOM.createRoot(rootElement);
