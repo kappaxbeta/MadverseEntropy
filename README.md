@@ -1,78 +1,30 @@
-# React Image Editor
+# React + TypeScript + Vite
 
-![Live Screenshot](https://github.com/swimmingkiim/react-image-editor/blob/main/screenshots/screenshot-1.png?raw=true)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## How to Run Project
+Currently, two official plugins are available:
 
-```bash
-npm i
-npm start
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
 ```
 
-## How to Serve
-
-```bash
-npm i -g serve
-npm i
-npm run build
-npm run serve
-```
-
-## Features
-
-- Data
-
-  - history (undo, redo)
-  - copy, paste, duplicate
-
-- Color
-
-  - apply color picker
-  - save & reload color list to localStorage
-
-- Tab
-
-  - create tab
-  - delete tab
-  - change canvas data by changing tab
-
-- Frame
-
-  - drag & drop
-  - move
-  - resize
-
-- Export
-
-  - export all frame
-  - export selected frame
-
-- EditableObject
-  - Common
-    - create by drag & drop
-    - update
-    - read
-    - delete
-    - change background color
-    - move
-    - resize
-    - rotation
-    - opacity
-  - Image
-    - import image
-    - brightness
-    - filter
-  - Shape
-  - Icon
-    - from bootstrap
-    - search icon
-  - Text
-    - create text
-    - edit text
-    - change color
-    - text align
-    - remove text
-
-
-# Support Me!
-<a href="https://www.buymeacoffee.com/swimmingkiim" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

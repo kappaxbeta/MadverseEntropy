@@ -113,14 +113,14 @@ const ImageThumbnail: React.FC<{
           "data-item-type": data["data-item-type"],
           src: data.src.startsWith("data:")
             ? data.src
-            : `${process.env.PUBLIC_URL}/assets/image/${data.src}`,
+            : `${process.env.publicDir}/assets/image/${data.src}`,
         }}>
         <Figure.Image
           alt={data.name}
           src={
             data.src.startsWith("data:")
               ? data.src
-              : `${process.env.PUBLIC_URL}/assets/image/${data.src}`
+              : `${process.env.publicDir}/assets/image/${data.src}`
           }
         />
       </Drag>

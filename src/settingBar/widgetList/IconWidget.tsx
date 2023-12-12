@@ -71,7 +71,7 @@ const IconThumbnail: React.FC<{
       }}>
       <Figure.Image
         alt={data.icon}
-        src={`${process.env.PUBLIC_URL}/assets/icon/bootstrap/${data.icon}`}
+        src={`${process.env.publicDir}/assets/icon/bootstrap/${data.icon}`}
       />
     </Drag>
     {/* <Figure.Caption
