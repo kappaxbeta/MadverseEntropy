@@ -2,7 +2,7 @@
   "name": "MadverseEntropyr",
   "version": "0.1.0",
   "description": "React + Konva / image editor / like Figma or Canva",
-  "homepage": "https://swimmingkiim.github.io/react-image-editor",
+  "homepage": "https://entropy.madverse.club",
   "bugs": "https://github.com/swimmingkiim/react-image-editor/issues",
   "author": "swimmingkiim <swimmingkiim@gmail.com>",
   "repository": "https://github.com/swimmingkiim/react-image-editor.git",
@@ -38,6 +38,7 @@
     "redux": "^4.2.0",
     "redux-observable": "^2.0.0",
     "rxjs": "^7.5.5",
+    "serve": "^14.2.1",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
